@@ -1,0 +1,585 @@
+--------- beginning of main
+D/libfingersense_wrapper( 1142): Calling fingersense_classify_touch()
+D/libfingersense_wrapper( 1142): fingersense_classify_touch() finished
+I/ScalingFreqAdapterUniPerf( 2176): ===success setFreq:  gpumax:8->360000000
+I/ScalingFreqAdapterUniPerf( 2176): ===success setFreq:  gpumin:7->360000000
+I/uniperf server(  520): setConfig clientId=1, tagLen=1, tags[0]=8, configs[0]=360000000
+I/uniperf server(  520): setConfig clientId=1, tagLen=1, tags[0]=7, configs[0]=360000000
+E/uniperf server(  520): uniPerfEvent doParse failed! cmdId=4096, errno=1
+D/uniperf hal(  520): do uniPerfEvent failed, cmdId=4096, ret=2
+D/HwWifiStatStore( 1142): handleMessage : 200
+D/libfingersense_wrapper( 1142): Calling fingersense_touch_up()
+D/libfingersense_wrapper( 1142): fingersense_touch_up() finished
+V/AudioManager( 9494): playSoundEffect   effectType: 0
+--------- beginning of system
+I/ActivityManager( 1142): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.yaya.zone/.activity.SplashActivity bnds=[804,84][1068,369]} from uid 10057
+I/ActivityManager( 1142): ActivityRecord info: ActivityInfo{c6fc431 com.yaya.zone.activity.SplashActivity}
+D/AwareLog(  754): iawared:  decompress gpu mem, pid:21837
+I/ash     ( 2176): front pkg : com.yaya.zone launcher: false
+I/ash     ( 2176): above launcher front pkgs: [com.yaya.zone]
+D/ActivityManager( 1142): allPausedActivitiesComplete: r=ActivityRecord{c986ac6 u0 com.huawei.android.launcher/.unihome.UniHomeLauncher t224} state=PAUSING
+D/MotionDetectionManager( 9494): stopMotionAppsReco motionApps: 403
+D/MotionDetectionManager( 9494): stopMotionAppsReco not recognition motionApps 403
+W/HwLauncher( 9494): Launcher.MotionManager stopMotionAppsReco service flg 403 is unavailable
+V/WindowManager( 1142): No longer Stopped: AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}
+V/WindowManager( 1142): findFocusedWindow: AppWindowToken{be6fdb4 token=Token{891fa87 ActivityRecord{c986ac6 u0 com.huawei.android.launcher/.unihome.UniHomeLauncher t224}}} below Reached focused app=AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}
+E/WifiHAL (  529): enter wifi_get_link_stats
+D/ScenarioService( 2176): front pkg : com.yaya.zone launcher: false
+D/ScenarioService( 2176): new above launcher front pkgs: [com.yaya.zone]
+I/AppsUsage( 2176): scnOff:false FgAPP:com.yaya.zone BgAPP:com.huawei.android.launcher
+D/EmcomManagerService( 1142): forePackage name is com.yaya.zone
+D/HicomPolicyManager( 1142): foreAppInfo = nullpkgName = com.yaya.zone uid= 10408
+E/HicomPolicyManager( 1142): udp acc is not start yet!
+D/HicomPolicyManager( 1142): speed control is not start
+E/HicomPolicyManager( 1142): Network Evaluation is not start yet!
+E/HicomPolicyManager( 1142): foreground app info is null
+D/[HwRecSys]HwRecSysService( 2781): onEvent actionID: 10000 msg:com.yaya.zone		
+I/PGServer( 2176): report state:10010 event type:2 pid:0 uid:0 pkg:com.huawei.android.launcher to pid: 2176
+I/[HwRecSys]HwRecSysService( 2781):  cur pkg: com.yaya.zone
+I/SceneReceiver( 2176): state type: 10010 eventType:2 pid:0 uid:0 pkg:com.huawei.android.launcher
+I/PGServer( 2176): report state:10010 event type:2 pid:0 uid:0 pkg:com.huawei.android.launcher to pid: 1142
+I/PGServer( 2176): report state:10000 event type:1 pid:0 uid:0 pkg:com.yaya.zone to pid: 2176
+I/SceneReceiver( 2176): state type: 10000 eventType:1 pid:0 uid:0 pkg:com.yaya.zone
+D/HwThermalStateManager( 2176): current foreapp pkg : com.yaya.zone
+I/PGServer( 2176): report state:10000 event type:1 pid:0 uid:0 pkg:com.yaya.zone to pid: 1142
+I/PGServer( 2176): checkPkgType. calling pkg: android
+I/chatty  ( 2176): uid=1000(system) Binder:2176_F identical 1 line
+I/PGServer( 2176): checkPkgType. calling pkg: android
+W/        (  754): iawared check failed: pid = 12732  uid=99460
+W/libc    ( 2176): Set property "sys.aps.gameProcessName" to ""
+V/WindowManager( 1142): findFocusedWindow: AppWindowToken{be6fdb4 token=Token{891fa87 ActivityRecord{c986ac6 u0 com.huawei.android.launcher/.unihome.UniHomeLauncher t224}}} below Reached focused app=AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}
+I/WindowManager( 1142): rotationForOrientationLw(orient=5, last=0); user=0 USER_ROTATION_LOCKED
+D/HwPhoneWindowManager( 1142): face_rotation: not enabled,use sensor real
+D/HwPhoneWindowManager( 1142): face_rotation:real sensor rotation = -1
+D/HwPhoneWindowManager( 1142): face_rotation: rotation = 0
+I/WindowManager( 1142): Selected orientation 5, got rotation 0 which has compatible metrics
+W/libc    ( 2176): Set property "sys.aps.browserProcessName" to ""
+E/wificond(  750): Failed to get NL80211_STA_INFO_CNAHLOAD
+E/WificondControl( 1142): Noise: -88, Snr: 0, Chload: -1
+D/HwWifiCHRStateManager( 1142): handleMessage : 1001
+D/HwWifiCHRStateManager( 1142): handleUpdateChannel:2442
+V/HwWifiServiceFactory( 1142): get AllImpl object = com.android.server.wifi.HwWifiServiceFactoryImpl@fa23fe8
+D/WifiScoreReport( 1142): Score = 100, wifiConnectivityManagerEnabled = false, lowScoreCount = 0
+V/WindowManager( 1142): notifyAppResumed: wasStopped=true AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}
+V/WindowManager( 1142): Checking 1 opening apps (frozen=false timeout=false)...
+V/WindowManager( 1142): Check opening app=AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false
+W/ActivityManager( 1142): Unable to start service Intent { act=com.huawei.launcher.action.LAUNCHER_APP_STARTUP pkg=com.huawei.trustspace (has extras) } U=0: not found
+D/HwQoEUtils( 1142): mForegroundAppPackageName: com.yaya.zone ,score: 0
+D/HwQoEUtils( 1142): onForegroundAppWifiSleepChange: config:false, sleeptime:-1,type: 14, appname:com.yaya.zone
+D/HwQoEUtils( 1142): APP type: 14 appName= com.yaya.zone
+D/HwQoEUtils( 1142): no game, APP_TYPE_GAME, appName =com.yaya.zone
+D/HwGameAssistantController( 1142): pid=21837, uid=10408, foreground=true
+I/HwNetworkPolicy( 1142): onTransact, code = 203
+W/AwareLog( 1142): SchedLevelBoost: onFgActivitiesChanged config not set!
+I/HwNetworkPolicyManager( 2295): getHwUidPolicy uid = 10408 policy = 0
+D/CrashReport(21837): >>> com.yaya.zone.activity.HomeActivity onResumed <<<
+I/awcn.SessionCenter(21837): |[seq:[default]] [forground]
+I/awcn.SessionCenter(21837): |[seq:24673067] [forground]
+D/awcn.StrategyCenter(21837):  getSchemeByHost host:acs4public.m.taobao.com scheme:https
+D/awcn.SessionCenter(21837): |[seq:24673067] getInternal u:https://acs4public.m.taobao.com TypeClass:SPDY timeout:0
+D/awcn.StrategyCenter(21837):  getSchemeByHost host:acs4public.m.taobao.com scheme:https
+D/awcn.SessionCenter(21837): |[seq:24673067] get internal hit cache session session:Session@[24673067.AWCN1_1|http2_0rtt_acs]
+I/StatisticsManager(21837): 79365/track record: ak=522d5774f847dc895f89cbb29e709779&dv=56f8c510dc759e085bc3aa93&cup=com.yaya.zone.activity.HomeActivity&tm=1544976208779&ct=叮咚买菜&lt=0&u=9885f34096d14ce5940d73d721570e3c
+V/test    (21837): 79365/http request: https://da.qiyukf.com/mobileda/da.gif?ak=522d5774f847dc895f89cbb29e709779&bid=com.yaya.zone&r=YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5Lk9yZGVyUGF5U3RhdGVBY3Rpdml0eSZ0bT0xNTQ0OTU4MjMzNzM2JmN0PeWPruWSmuS5sOiPnCZsdD0xJnU9YzU3NjhiNmU0NDE4NGQxYThjYjdiY2ViNjE4ZDEwOTY=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTU4MjMzNzUyJmN0PeWPruWSmuS5sOiPnCZsdD0wJnU9YzAyMzc5Y2EzNmIyNGZiYmFiNDgyYzEyMTQ5N2YwMTU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTU4MjM3MTEwJmN0PeWPruWSmuS5sOiPnCZsdD0xJnU9YzAyMzc5Y2EzNmIyNGZiYmFiNDgyYzEyMTQ5N2YwMTU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NTkxNDA0MzMmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTAmdT00YjI1Y2RiMDk5NzQ0ZTBlOWUwODczNzE0ZDE2NTIxYQ==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NTkxNDE5NzMmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTEmdT00YjI1Y2RiMDk5NzQ0ZTBlOWUwODczNzE0ZDE2NTIxYQ==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTU5MTQyMTU1JmN0PeWPruWSmuS5sOiPnCZsdD0wJnU9YjliNDRlNGQxYzI5NDI2YzkwZWI0NTZkNDlhOTM3ZWU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTU5MTUyMjE5JmN0PeWPruWSmuS5sOiPnCZsdD0xJnU9YjliNDRlNGQxYzI5NDI2YzkwZWI0NTZkNDlhOTM3ZWU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NzU2MTEzODMmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTAmdT0yMThhNzAwM2NjMDQ0ZGM1YTcwMTNmMTMyYzkzOGI3NQ==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NzU2MTI5NDQmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTEmdT0yMThhNzAwM2NjMDQ0ZGM1YTcwMTNmMTMyYzkzOGI3NQ==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTc1NjEzMDc0JmN0PeWPruWSmuS5sOiPnCZsdD0wJnU9N2Q1MDFmMjg1ZDgyNGVjNTk0MTJkZDJhNGNmZjk2NTA=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTc1NjE4NTUyJmN0PeWPruWSmuS5sOiPnCZsdD0xJnU9N2Q1MDFmMjg1ZDgyNGVjNTk0MTJkZDJhNGNmZjk2NTA=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NzU2NzUxMzAmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTAmdT04YjZkYzk1NmZlY2I0NTFmOTE1ZjAyZmUyZjQ5ZGIwNA==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NzU2Nzc1MjMmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTEmdT04YjZkYzk1NmZlY2I0NTFmOTE1ZjAyZmUyZjQ5ZGIwNA==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTc1Njc3NjczJmN0PeWPruWSmuS5sOiPnCZsdD0wJnU9MTE5NjFmYmQ0NWY1NDIwYmI2YzUxMjg1YjA1NWViMDU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LkhvbWVBY3Rpdml0eSZ0bT0xNTQ0OTc1NjgwMDA0JmN0PeWPruWSmuS5sOiPnCZsdD0xJnU9MTE5NjFmYmQ0NWY1NDIwYmI2YzUxMjg1YjA1NWViMDU=,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl2aXR5LlNwbGFzaEFjdGl2aXR5JnRtPTE1NDQ5NzU5MDg5MTgmY3Q95Y+u5ZKa5Lmw6I+cJmx0PTAmdT1mY2NiODE3ODVjYzc0NTg0YjJiMmNlYTZlZTExMWMxMQ==,YWs9NTIyZDU3NzRmODQ3ZGM4OTVmODljYmIyOWU3MDk3NzkmZHY9NTZmOGM1MTBkYzc1OWUwODViYzNhYTkzJmN1cD1jb20ueWF5YS56b25lLmFjdGl
+W/OkHttpClient(21837): A connection to http://106.11.248.1/ was leaked. Did you forget to close a response body?
+W/OkHttpClient(21837): A connection to http://106.11.248.1/ was leaked. Did you forget to close a response body?
+D/libc    (  747): GetAddrInfoHandler addr: xxx.168.1.1
+W/libc    (  747): Set property "hw.wifi.dns_stat" to "336,28,5019,1,10218"
+I/TransEx (21837): 79363/execute Transaction: [id: 19,  uri: AuthService/changeSaverMode]
+E/SELinux (  443): avc:  denied  { find } for interface=vendor.huawei.hardware.hwsched::ISched pid=533 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager
+E/BufferQueueProducer(  533): [] Can not get hwsched service
+W/WindowManager( 1142): EGLdebug Created surface WindowStateAnimator{ecc5112 com.yaya.zone/com.yaya.zone.activity.HomeActivity}
+V/HwPhoneWindowManager( 1142): updateSystemUiColorLw window=Window{78ecac8 u0 com.yaya.zone/com.yaya.zone.activity.HomeActivity},EmuiStyle=0,StatusBarColor=0xff000000,NavigationBarColor=0xff000000, mLastIsEmuiLightStyle=-1, mForceNotchStatusBar=false
+D/HwPhoneWindowManager( 1142): Transact:setSystemUIColor to status bar service
+I/CommandQueue(17227): updateBarBgColor
+D/CommandQueue(17227): CommandQueue, setBarBackgroundColor
+D/TintManager(17227): statusBarIconTint=#99FFFFFF,navigationBarIconTint=#FF000000
+D/BarTransitions.HwPhoneStatusBarView(17227): MODE_TRANSPARENT -> MODE_TRANSLUCENT animate=false
+D/BarTransitions.HwPhoneStatusBarView(17227): applyModeBackground oldMode=MODE_TRANSPARENT newMode=MODE_TRANSLUCENT animate=false
+V/WindowManager( 1142): Checking 1 opening apps (frozen=false timeout=false)...
+V/WindowManager( 1142): Check opening app=AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}: allDrawn=false startingDisplayed=false startingMoved=false isRelaunching()=false
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+D/XRefreshView.onLayout(L:362)(21837): onLayout mHolder.mOffsetY=0
+W/Glide   (21837): Load failed for  with size [60x60]
+W/Glide   (21837): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+E/Glide   (21837): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+W/Glide   (21837): Load failed for  with size [60x60]
+W/Glide   (21837): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+E/Glide   (21837): class com.bumptech.glide.load.engine.GlideException: Failed to load resource
+D/HwRecentsLockUtils(17227): Search
+E/HsmCoreServiceImpl( 2163): onTransact in code is: 103
+I/MediaProcessHandler( 2163): playingUids: 
+D/ActivityManager( 1142): Skipping, home or recents stack task: TaskRecord{8b40c9e #224 A=com.huawei.android.launcher U=0 StackId=0 sz=1}
+D/ActivityManager( 1142): Skipping intent:flg=0x14800000 cmp=com.yaya.zone/com.alibaba.sdk.android.push.keeplive.PushExtActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[48,1193][1032,2433]
+D/ActivityManager( 1142): Skipping intent:act=android.deviceinfo.chooser.action.LAUNCH flg=0x10800000 hwFlg=0x100 pkg=com.android.settings cmp=com.android.settings/.deviceinfo.UsbConnModeChooserActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.incallui/.InCallActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x1b800000 hwFlg=0x2 cmp=com.tencent.mm/.plugin.base.stub.WXPayEntryActivity
+D/ActivityManager( 1142): Skipping intent:act=com.huawei.intent.action.hwCHOOSER flg=0x18800000 cmp=com.huawei.android.internal.app/.HwChooserActivity
+D/ActivityManager( 1142): Skipping intent:act=com.android.contacts.action.CHOOSE_SUB_HUAWEI dat=tel:xxxxxxxxxxxxxxxxx flg=0x10800000 cmp=com.android.contacts/.ChooseSubActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10840000 hwFlg=0x100 cmp=com.android.deskclock/.alarmclock.LockAlarmFullActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.SEND typ=application/vnd.android.package-archive flg=0x13800001 cmp=com.tencent.wework/.launch.AppSchemeLaunchActivity clip={application/vnd.android.package-archive U:content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE%20(7).apk}
+D/ActivityManager( 1142): Skipping intent:flg=0x10800000 cmp=com.huawei.wallet/com.huawei.nfc.carrera.ui.swipe.SwipeActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10800000 cmp=com.huawei.hitouch/.HiTouchStartActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x1b800000 hwFlg=0x2 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10800000 cmp=com.baidu.input/.emojis.view.AREmojiManagerActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.baidu.searchbox.fileprovider/baiddpath/baidu/AppSearch_Lite/downloads/com_jiuyu_sptcc_cordova_6_0_20181126002_126.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.wework.fileprovider/external_files/Tencent/WeixinWork/filecache/1688852513317032/1b/d6ed6f0f0cc0de8f2beea86970f418d0/XZone_v8.23.0_tencent.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.wework.fileprovider/external_files/Tencent/WeixinWork/filecache/1688852513317032/2b/041c82ec3b9fd6bbcf657307b4a918af/XZone_v8.23.0_xzone.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+D/XRefreshView.onLayout(L:362)(21837): onLayout mHolder.mOffsetY=0
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.wework.fileprovider/external_files/Tencent/WeixinWork/filecache/1688852513317032/4b/fb75b77f9ef76b2852591b748b252f55/XZone_8.23.0_PE(20181207).apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (7).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (6).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (5).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=file:///storage/emulated/0/zone/1544098385076.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.15.0_PE.apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (4).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (3).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (2).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:flg=0x10808000 cmp=com.baidu.input/.mpermissions.ImePermissionActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10800000 pkg=com.baidu.input cmp=com.baidu.input/.ImeAppMainActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10808000 cmp=com.baidu.input/.ImeMainConfigActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10800000 cmp=com.baidu.input/.ImeGuiderActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10808000 cmp=com.baidu.input_huawei/com.baidu.input.ImeMainConfigActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE (1).apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http://pay.ddxq.mobi/... flg=0x10800000 cmp=com.huawei.android.internal.app/.HwResolverActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=http://pay.ddxq.mobi/... flg=0x10800000 cmp=com.huawei.android.internal.app/.HwResolverActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.android.chrome.FileProvider/downloads/XZone_8.23.0_TE.apk typ=application/vnd.android.package-archive flg=0x10800003 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:flg=0x34800000 hwFlg=0x100 cmp=com.huawei.systemmanager/.spacecleanner.SpacePieceCleanActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x10800000 cmp=com.huawei.android.instantshare/com.huawei.android.hwshare.ui.quickstart.QuickstartActivity
+D/ActivityManager( 1142): Skipping intent:flg=0x1b800000 hwFlg=0x2 cmp=com.tencent.mm/.plugin.base.stub.WXPayEntryActivity u=0
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.wework.fileprovider/external_files/Tencent/WeixinWork/filecache/1688852513317032/29/62b264e0c49dc044728576eacb117e94/XZone_v8.21.0_xzone.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=market://details?id=com.yaya.zone flg=0x10800000 cmp=com.huawei.android.internal.app/.HwResolverActivity
+D/ActivityManager( 1142): Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.wework.fileprovider/external_files/Tencent/WeixinWork/filecache/1688852513317032/df/24933c018efdd209526669cfb7a5021c/XZone_v8.22.0_baidu.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+D/mali_winsys(21837): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+D/StatusBarIconController(17227): setIconVisibility icon is null or visibility not change visibility=false
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+D/YSFClient(21837): 79365/upload records, code = 200
+D/WindowManager( 1142): finishDrawingWindow: Window{78ecac8 u0 com.yaya.zone/com.yaya.zone.activity.HomeActivity} mDrawState=DRAW_PENDING
+W/InputMethodManager(21837): startInputReason = 1
+V/WindowManager( 1142): Checking 1 opening apps (frozen=false timeout=false)...
+V/WindowManager( 1142): Check opening app=AppWindowToken{139aff1 token=Token{fe54b98 ActivityRecord{f2b017b u0 com.yaya.zone/.activity.HomeActivity t5732}}}: allDrawn=true startingDisplayed=false startingMoved=false isRelaunching()=false
+D/BarTransitions.HwPhoneStatusBarView(17227): MODE_TRANSLUCENT -> MODE_TRANSPARENT animate=false
+D/BarTransitions.HwPhoneStatusBarView(17227): applyModeBackground oldMode=MODE_TRANSLUCENT newMode=MODE_TRANSPARENT animate=false
+D/CrashReport(21837): [AsyncTaskHandler] Post a normal task: com.tencent.bugly.crashreport.biz.a$2
+D/CrashReport(21837): Uploading frequency will not be checked if SDK is in debug mode.
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+E/BufferQueueProducer(  533): [com.huawei.intelligent.Workspace#0] disconnect: not connected (req=1)
+W/libEGL  (31230): EGLNativeWindowType 0x78357cd010 disconnect failed
+D/BarTransitions.HwPhoneStatusBarView(17227): MODE_TRANSPARENT -> MODE_TRANSLUCENT animate=false
+D/BarTransitions.HwPhoneStatusBarView(17227): applyModeBackground oldMode=MODE_TRANSPARENT newMode=MODE_TRANSLUCENT animate=false
+D/BarTransitions.HwNavigationBarView(17227): MODE_TRANSLUCENT -> MODE_TRANSPARENT animate=false
+D/BarTransitions.HwNavigationBarView(17227): applyModeBackground oldMode=MODE_TRANSLUCENT newMode=MODE_TRANSPARENT animate=false
+E/BufferQueueProducer(  533): [com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher#0] disconnect: not connected (req=1)
+W/libEGL  ( 9494): EGLNativeWindowType 0x77ed12d010 disconnect failed
+D/CrashReport(21837): [Database] deleted t_ui data 12
+D/CrashReport(21837): [UserInfo] Upload user info(size: 3)
+D/CrashReport(21837): summary type 3 vm:8
+D/CrashReport(21837): summary type 2 vm:8
+D/CrashReport(21837): summary type 3 vm:8
+I/CrashReport(21837): Failed to get boot time of device.
+D/CrashReport(21837): [UploadManager] Add upload task (pid=21837 | tid=21899)
+D/CrashReport(21837): [UploadManager] Sucessfully got session ID, try to execute upload task now (pid=21837 | tid=21899)
+D/CrashReport(21837): [UploadManager] Add upload task to queue (pid=21837 | tid=21899)
+D/CrashReport(21837): [UploadManager] Try to poll all upload task need and put them into temp queue (pid=21837 | tid=21899)
+D/CrashReport(21837): [UploadManager] Execute upload tasks of queue which has 1 tasks (pid=21837 | tid=21899)
+D/CrashReport(21837): [AsyncTaskHandler] Post a normal task: com.tencent.bugly.proguard.u$2
+W/JankService(  761): processEntry, not beta version or commercial log off
+I/APwTrigger( 2176): no high cpu load
+W/ActivityManager( 1142): Sending non-protected broadcast com.huawei.intent.action.PG_THERMAL_MSG_ACTION from system 2176:com.huawei.powergenie/1000 pkg com.huawei.powergenie
+I/BroadcastAdapter( 2176): send hight cpu load msg to thermal!
+D/CrashReport(21837): [Database] deleted t_lr data 1
+D/CrashReport(21837): [UploadManager] Local network consume: 0 KB
+D/CrashReport(21837): [Upload] Run upload task with cmd: 840
+D/CrashReport(21837): [UploadManager] Integrate security to HTTP headers (pid=21837 | tid=21899)
+D/CrashReport(21837): [Util] Zip 2007 bytes data with type Gzip
+I/ash     ( 2176): view remove pid:31153 uid:10401
+E/BufferQueueProducer(  533): [#1] disconnect: not connected (req=1)
+W/libEGL  (31153): EGLNativeWindowType 0xc6d71808 disconnect failed
+I/ash     ( 2176): view add pid:31153 uid:10401
+D/OpenGLRenderer(31153):   HWUI Binary is  enabled
+I/HwWindowManagerService( 1142): this win:Window{4e865af u0 com.baidu.input} hase children size:0
+V/WindowManager( 1142): Adding Window{4e865af u0 com.baidu.input} to WindowToken{a48cdbc android.os.BinderProxy@ef6698e}
+V/WindowManager( 1142): addWindow: New client android.os.BinderProxy@ef6698e: window=Window{4e865af u0 com.baidu.input} Callers=com.android.server.wm.HwWindowManagerService.addWindow:574 com.android.server.wm.Session.addToDisplay:199 android.view.IWindowSession$Stub.onTransact:124 com.android.server.wm.Session.onTransact:161 android.os.Binder.execTransact:675 
+W/ActivityManager( 1142): Sending non-protected broadcast com.android.server.wm.addview.preventnotify from system 1142:system/1000 pkg android
+W/ActivityManager( 1142): Sending non-protected broadcast com.android.server.wm.addview.preventnotify from system 1142:system/1000 pkg android
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=768,size=110592,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=141,h=141,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=110592,conUsg=0x906,proUsg=0x966,	 strd=192,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+E/SELinux (  443): avc:  denied  { find } for interface=vendor.huawei.hardware.hwsched::ISched pid=533 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager
+E/BufferQueueProducer(  533): [] Can not get hwsched service
+W/WindowManager( 1142): EGLdebug Created surface WindowStateAnimator{b171145 }
+I/TrafficMonitor( 1142): update:rxPkts:10,txPkts:22,rxBytes:4376,txBytes:9573
+I/TrafficMonitor( 1142): start expired. level:-1
+I/TrafficMonitor( 1142): gettimer:interval=2000
+D/mali_winsys(31153): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=256,size=172032,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=45,h=660,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=172032,conUsg=0xb00,proUsg=0xb00,	 strd=64,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+V/WindowManager( 1142): removeIfPossible: Window{8b1e98c u0 com.baidu.input} callers=com.android.server.wm.WindowState.removeIfPossible:1914 com.android.server.wm.WindowManagerService.removeWindow:2031 com.android.server.wm.Session.remove:218 android.view.IWindowSession$Stub.onTransact:242 com.android.server.wm.Session.onTransact:161 
+I/WindowManager( 1142): Destroying surface Surface(name=) called by com.android.server.wm.WindowStateAnimator.destroySurface:2072 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:884 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.removeImmediately:1899 com.android.server.wm.WindowState.removeIfPossible:2051 com.android.server.wm.WindowState.removeIfPossible:1914 com.android.server.wm.WindowManagerService.removeWindow:2031 com.android.server.wm.Session.remove:218 
+V/WindowManager( 1142): postWindowRemoveCleanupLocked: Window{8b1e98c u0 com.baidu.input}
+W/AppOps  ( 1142): Finishing op nesting under-run: uid 10401 pkg com.baidu.input code 24 time=0 duration=0 nesting=0
+V/WindowManager( 1142): Removing Window{8b1e98c u0 com.baidu.input} from WindowToken{73148d5 android.os.BinderProxy@a384ebf}
+D/OpenGLRenderer(31153):   HWUI Binary is  enabled
+D/WindowManager( 1142): finishDrawingWindow: Window{4e865af u0 com.baidu.input} mDrawState=DRAW_PENDING
+D/CrashReport(21837): [Database] deleted t_lr data 1
+V/WindowManager( 1142): Exit animation finished in Window{a9b89b9 u0 com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher EXITING}: remove=false
+V/WindowManager( 1142): Exit animation finished in Window{4f0bb4a u0 com.huawei.intelligent.Workspace EXITING}: remove=false
+D/ImageWallpaper(17227): onVisibilityChanged: mVisible, visible=true, false
+D/ImageWallpaper(17227): Visibility changed to visible=false
+D/CrashReport(21837): [Database] insert t_lr success.
+D/CrashReport(21837): [UploadManager] Uploading(ID:1001) time: 2018-12-17 00:03:29
+D/CrashReport(21837): [Upload] Send 1115 bytes
+D/CrashReport(21837): [Upload] Upload to http://android.bugly.qq.com/rqd/async?aid=1bf01436-949a-4656-a863-ac27992d64e5 with cmd 840 (pid=21837 | tid=21899).
+D/CrashReport(21837): request: http://android.bugly.qq.com/rqd/async?aid=1bf01436-949a-4656-a863-ac27992d64e5, send: 1115 (pid=21837 | tid=21899)
+V/WindowManager( 1142): notifyAppStopped: AppWindowToken{be6fdb4 token=Token{891fa87 ActivityRecord{c986ac6 u0 com.huawei.android.launcher/.unihome.UniHomeLauncher t224}}}
+D/LocationManagerService( 1142): request from uid 10020 is now background)
+E/WindowManager( 1142): win=Window{4f0bb4a u0 com.huawei.intelligent.Workspace} destroySurfaces: appStopped=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false
+I/LocationManagerService( 1142): applyRequirementsLocked to network
+D/WorkSource( 1142): Insert in WorkSource{} @ 0 uid 10020 name com.huawei.intelligent
+D/HwLocationProviderProxy( 1142): setRequest ProviderRequest[ON interval=+1h0m0s0ms], mNlpUsed 2,mLocationMonitoring false
+D/HwLocationProviderProxy( 1142): setRequest to Amap or baidu map
+I/WindowManager( 1142): Destroying surface Surface(name=com.huawei.intelligent.Workspace) called by com.android.server.wm.WindowStateAnimator.destroySurface:2072 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:884 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:2998 com.android.server.wm.WindowState.destroySurface:2951 com.android.server.wm.AppWindowToken.destroySurfaces:664 com.android.server.wm.AppWindowToken.destroySurfaces:648 com.android.server.wm.AppWindowToken.notifyAppStopped:692 
+E/WindowManager( 1142): win=Window{a9b89b9 u0 com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher} destroySurfaces: appStopped=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false
+I/WindowManager( 1142): Destroying surface Surface(name=com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2072 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:884 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:2998 com.android.server.wm.WindowState.destroySurface:2951 com.android.server.wm.AppWindowToken.destroySurfaces:664 com.android.server.wm.AppWindowToken.destroySurfaces:648 com.android.server.wm.AppWindowToken.notifyAppStopped:692 
+I/LocationManagerService( 1142): provider request: network ProviderRequest[ON interval=+1h0m0s0ms] mCHRFirstReqFlag:false
+D/wifiserviceimpl( 1142): netmask =16777215
+D/baidu_location_service( 2899): wifi connect scan time < 360S
+D/TelephonyManager( 2899): getAllCellInfo calling app is com.baidu.map.location
+W/PhoneInterfaceManager( 2190): shouldBlockLocation running ...
+I/PhoneInterfaceManager( 2190): shouldBlockLocation  ret:false
+W/AwareLog( 1142): SchedLevelBoost: onFgActivitiesChanged config not set!
+D/HwGameAssistantController( 1142): pid=9494, uid=10057, foreground=false
+E/RMS.HwSysResManagerService( 1142): Process Permission error! pid:2190 uid:1001 Process.myPid:1142
+D/HwMSDPDeviceStatus( 1142): getCurrentDeviceStatus
+D/HwMSDPDeviceStatusServiceProxy( 2150): getCurrentDeviceStatus in
+D/ARMoudle.HwActivityRecognition( 2150): getCurrentActivityExtend
+I/ArData  (  495): (ar_data_get_state:1213):id[2]
+D/ARMoudle.HwActivityRecognition( 2150): hwActivityEvent:[ ActivityChangedExtendEvent:
+D/ARMoudle.HwActivityRecognition( 2150):     Activity='android.activity_recognition.unknown', EventType=1, TimestampNs=34350462346
+D/ARMoudle.HwActivityRecognition( 2150): ]
+D/HwMSDPDeviceStatusServiceProxy( 2150): timestampNs is (get) :34350462346
+D/HwMSDPDeviceStatusServiceProxy( 2150): sensorHubStatus  is android.activity_recognition.unknownmEventType is 1mTimestampNs is 34350462346
+D/HwMSDPStillStatusOfRelative( 2150): isMainSIMOkay main SIM card status is ready
+D/HwMSDPDeviceStatusServiceProxy( 2150): get current device status results is [ActivityChangedEvent:
+D/HwMSDPDeviceStatusServiceProxy( 2150): DeviceStatus='android.activity_recognition.still_of_relative_level_one',EventType='1',TimestampNs=4371622024
+D/HwMSDPDeviceStatusServiceProxy( 2150): ]
+D/HwMSDPDeviceStatusService( 2150): hwMSDPDeviceStatusEvents  is [DeviceStatus='android.activity_recognition.still_of_relative_level_one',EventType='1',TimestampNs=4371622024]
+D/CrashReport(21837): [Upload] Bugly version from headers is: bugly/1.0
+D/CrashReport(21837): [Upload] Status from server is 0 (pid=21837 | tid=21899).
+D/CrashReport(21837): [Upload] Received 131 bytes
+D/CrashReport(21837): [Util] Unzip 115 bytes data with type Gzip
+D/CrashReport(21837): [Upload] Response cmd is: 0, length of sBuffer is: 0
+I/CrashReport(21837): [Upload] Success: userinfo
+D/CrashReport(21837): [UploadManager] Local network consume: 23 KB
+D/CrashReport(21837): [Database] deleted t_lr data 0
+E/RMS.HwSysResManagerService( 1142): Process Permission error! pid:2190 uid:1001 Process.myPid:1142
+D/HwMSDPDeviceStatus( 1142): getCurrentDeviceStatus
+D/HwMSDPDeviceStatusServiceProxy( 2150): getCurrentDeviceStatus in
+D/ARMoudle.HwActivityRecognition( 2150): getCurrentActivityExtend
+I/ArData  (  495): (ar_data_get_state:1213):id[2]
+D/ARMoudle.HwActivityRecognition( 2150): hwActivityEvent:[ ActivityChangedExtendEvent:
+D/ARMoudle.HwActivityRecognition( 2150):     Activity='android.activity_recognition.unknown', EventType=1, TimestampNs=34350462346
+D/ARMoudle.HwActivityRecognition( 2150): ]
+D/HwMSDPDeviceStatusServiceProxy( 2150): timestampNs is (get) :34350462346
+D/HwMSDPDeviceStatusServiceProxy( 2150): sensorHubStatus  is android.activity_recognition.unknownmEventType is 1mTimestampNs is 34350462346
+D/HwMSDPStillStatusOfRelative( 2150): isMainSIMOkay main SIM card status is ready
+D/HwMSDPDeviceStatusServiceProxy( 2150): get current device status results is [ActivityChangedEvent:
+D/HwMSDPDeviceStatusServiceProxy( 2150): DeviceStatus='android.activity_recognition.still_of_relative_level_one',EventType='1',TimestampNs=4371622024
+D/HwMSDPDeviceStatusServiceProxy( 2150): ]
+D/HwMSDPDeviceStatusService( 2150): hwMSDPDeviceStatusEvents  is [DeviceStatus='android.activity_recognition.still_of_relative_level_one',EventType='1',TimestampNs=4371622024]
+D/baidu_location_service( 2899): start network locating ...false  false
+D/NLP_STA ( 2899): network locating ...false  false
+I/NLP     ( 2899): result:[location successful], reason:[network location]
+D/HwLocationProviderProxy( 1142): reportNLPLocation 2899, nlpUsed 2, dualNlp false, monitoring false
+D/HwLocationManagerService( 1142): connectedNlpPackage com.baidu.map.location
+I/LocationManagerService( 1142): incoming location: Location[network 31******,122****** hAcc=40 et=+50d14h22m9s179ms vAcc=??? sAcc=??? bAcc=???]; passive:false
+D/HwLocalLocationProvider( 1142): this loc is Better than Last Location
+D/LocationManagerService( 1142):  network LocationChanged,  NLP status: 3 , provider : network
+D/HwGnssLogServices( 1142): stopNlpTimer 
+D/NcDft_ServiceImpl( 2137): notifyNcDftEvent domain is : 0 ;eventID is: 29 ;List is [3]
+E/HwNLPSessionRecorder( 2137):  update NLP status:  3
+D/LocationService(31230): onStatusChanged provider=network status=3
+I/LocationManagerService( 1142): incoming location: Location[network 31******,122****** hAcc=40 et=+50d14h22m9s179ms vAcc=??? sAcc=??? bAcc=???]; passive:true
+I/LocationManagerService( 1142): key of receiver: 446e8b
+I/ctaifs  ( 1142): <Android 系统>[Android 系统][system]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: 7ea87d3
+W/ProcBatteryStats( 1142): timer is running , not start, name: , uid: 1000, tag: LocationManagerService
+I/ctaifs  ( 1142): <Android 系统>[Android 系统][system]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: f82124f
+D/PGGoogleServicePolicy( 1142): worksource has gms, prevent hold partial wakelock
+I/ctaifs  ( 1142): <Google Play 服务>[Google Play 服务][com.google.android.gms.persistent]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: 11adc1a
+D/PGGoogleServicePolicy( 1142): worksource has gms, prevent hold partial wakelock
+I/ctaifs  ( 1142): <Google Play 服务>[Google Play 服务][com.google.android.gms.persistent]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: 91aaf31
+I/ctaifs  ( 1142): <Google Play 服务>[Google Play 服务][com.google.android.gms.persistent]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: f2a4b78
+W/ProcBatteryStats( 1142): timer is running , not start, name: , uid: 1010015, tag: LocationManagerService
+I/ctaifs  ( 1142): <Google Play 服务>[Google Play 服务][com.google.android.gms.persistent]:[handleLocationChangedLocked] 读取定位信息
+I/LocationManagerService( 1142): key of receiver: c30c711
+D/HwLocalLocationProvider( 1142): cellid is Exist, update  cellinfo to DB
+D/HwLocalLocationProvider( 1142): update loc to cell database
+I/ctaifs  ( 1142): <网络位置>[网络位置][com.baidu.map.location]:[handleLocationChangedLocked] 读取定位信息
+D/libgps  (  756): proxy_gps_inject_location: called.
+D/NcDft_ServiceImpl( 2137): notifyNcDftEvent domain is : 0 ;eventID is: 24 ;List is [ref_location]
+W/ProcBatteryStats( 1142): timer is not running , not stop, name: , uid: 1000, tag: LocationManagerService
+W/ProcBatteryStats( 1142): timer is not running , not stop, name: , uid: 1010015, tag: LocationManagerService
+D/NcDft_GnssDftManager( 2137): handlerInjectExtraParam ref_location
+D/CrashReport(21837): [Database] insert t_lr success.
+D/CrashReport(21837): [UploadManager] Network total consume: 24 KB
+D/CrashReport(21837): [UserInfo] Successfully uploaded user info.
+D/HwLocalLocationProvider( 1142): update loc to bssid database
+D/CrashReport(21837): [Database] insert t_ui success.
+D/CrashReport(21837): [Database] insert t_ui success with ID: 329
+I/irqbalance(  538): Decided to move irq 66 from cpu 0 to cpu 1
+I/irqbalance(  538): Decided to move irq 9 from cpu 0 to cpu 1
+I/ScalingFreqAdapterUniPerf( 2176): ===success setFreq:  gpumax:8->480000000
+I/ScalingFreqAdapterUniPerf( 2176): ===success setFreq:  gpumin:7->360000000
+I/uniperf server(  520): setConfig clientId=1, tagLen=1, tags[0]=8, configs[0]=480000000
+I/uniperf server(  520): setConfig clientId=1, tagLen=1, tags[0]=7, configs[0]=360000000
+D/CrashReport(21837): [Database] insert t_ui success.
+D/CrashReport(21837): [Database] insert t_ui success with ID: 336
+D/CrashReport(21837): [Database] insert t_ui success.
+D/CrashReport(21837): [Database] insert t_ui success with ID: 338
+W/HSM     ( 9082): BaseTask:ApkCacheScanTask onPublishEnd, set stat failed, current state is:9
+D/NetWorkUtils(17227): mVSimCurCardType is -1
+I/chatty  (17227): uid=10038(u0_a38) com.android.systemui identical 2 lines
+D/NetWorkUtils(17227): mVSimCurCardType is -1
+D/XRefreshView.stopRefresh(L:911)(21837): stopRefresh mPullRefreshing=false
+D/XRefreshView.onLayout(L:362)(21837): onLayout mHolder.mOffsetY=0
+I/GRALLOC (  501): 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=501 
+I/GRALLOC (  501): 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+I/GRALLOC (  501): 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=0,ionhnd = 1 
+D/XRefreshView.onLayout(L:362)(21837): onLayout mHolder.mOffsetY=0
+D/HwArpVerifier( 1142): performPollAndLog:
+D/hw_netstat( 1142): total/6310/13814,com.yaya.zone/6091/13409,unknown:0/219/405
+I/zygote64(21837): Background concurrent copying GC freed 21412(1345KB) AllocSpace objects, 19(352KB) LOS objects, 54% free, 4MB/10MB, paused 21.506ms total 73.645ms
+D/libfingersense_wrapper( 1142): Calling fingersense_classify_touch()
+D/libfingersense_wrapper( 1142): fingersense_classify_touch() finished
+I/TrafficMonitor( 1142): expired arrive. level:-1
+I/TrafficMonitor( 1142): during_ms:2002,period_ms:2000
+I/TrafficMonitor( 1142): count:497,rx_sum:10,tx_sum:22,rxBytes:4376,during_ms:2002,rx_speed:2185.814185814186,tx_speed:4781.718281718282,rto:0.45454545454545453
+D/HuaweiWifiWatchdogStateMachine( 1142): speed: rxpkt:10, rxSpd:2185B/s, txpkt:22, txSpd:4781
+D/libfingersense_wrapper( 1142): Calling fingersense_touch_up()
+D/libfingersense_wrapper( 1142): fingersense_touch_up() finished
+D/XRefreshView.stopRefresh(L:911)(21837): stopRefresh mPullRefreshing=false
+D/XRefreshView.onLayout(L:362)(21837): onLayout mHolder.mOffsetY=0
+E/Thermal-daemon(  749): [flash_led] temp_new :26  temp_old :25
+I/ThermalService( 2176): Receive temperature change, type: 3, temp: 26 from thermald
+E/Thermal-daemon(  749): Report temperature: [flash_led] temp :26  report_threshold:1
+W/AlarmManager( 1142): mIsScreenOn is: true, WAKEUP alarm trigger action = null package name is: com.huawei.intelligent
+W/AlarmManager( 1142): mIsScreenOn is: true, WAKEUP alarm trigger action = com.google.android.gms.gcm.ACTION_CHECK_QUEUE package name is: com.google.android.gms
+W/AlarmManager( 1142): mIsScreenOn is: true, WAKEUP alarm trigger action = ALARM_ACTION(9357) package name is: com.tencent.wework
+W/AlarmManager( 1142): mIsScreenOn is: true, WAKEUP alarm trigger action = com.tencent.mobileqq:MSF_7009811 package name is: com.tencent.mobileqq
+I/PlaceRecognitionService(31358): onCreate
+I/PlaceRecognitionService(31358): getJobIdFromIntent cmdType 4
+I/PlaceRecognitionService(31358): getExtraFromIntent cmdType 4
+I/CalendarSync(31358): init
+I/IntelligentProvider(31358): Provider.call: getPrefString
+D/CalendarSync(31358): recess info last refresh time: 1544889690603
+D/CalendarSync(31358): syncCalendar begin!
+D/PlaceRecognitionService(31358): scheduled distinct jobs size: 0
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+W/HwAlarmManagerService( 1142): isContainsAppUidInWorksource-->happend NameNotFoundException
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{4a365c0 u0 com.google.android.gms.gcm.ACTION_CHECK_QUEUE}
+W/wework  ( 9357): [9419:1217/00:03:30.840:W:tcp_connection.cpp(689)] GapTcpConnection(2): Alarm KeepAlive OnAlarm 2147483686|2147483686
+W/wework  ( 9357): [9419:1217/00:03:30.840:W:tcp_connection.cpp(326)] GapTcpConnection(2): Execute Task "keep_alive"
+W/wework  ( 9357): [9419:1217/00:03:30.841:W:tcp_connection.cpp(359)] GapTcpConnection(2): SendData 20 bytes.
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{51302f9 u0 ALARM_ACTION(9357)}
+W/ActivityManager( 1142): Sending non-protected broadcast com.huawei.bd.action.heartbeat_hour from system uid 1000 pkg com.huawei.bd
+I/CalendarSync(31358): recessInfoKey : [{"year":2018, 
+I/CalendarSync(31358): "workday":[41,54,97,117,271,272], 
+I/CalendarSync(31358): "freeday":[-2,-1,0,45,46,47,48,49,50,51,94,95,96,118,119,120,166,167,168,264,265,266,273,274,275,276,277,278,279]}]
+I/CalendarSync(31358): configList size : 1
+I/HiAction_XChannel.HeartbeatService( 2809): onStartCommand(): 
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{c04189f u0 com.tencent.mobileqq:MSF_7009811}
+I/HiAction_XChannel.HeartbeatService( 2809): onStartCommand: acquireWakeLock
+I/HiAction_XChannel.HeartbeatService( 2809): acquireWakeLock(): 
+D/SmartHeartBeat( 1142): isPendingPackage, false, pkg:com.android.deskclock, action:com.android.deskclock.ALARM_ALERT,not pending alarm with AlarmClockInfo
+I/HiAction_XChannel.HeartbeatService( 2809): acquireWakeLock(): succeed
+I/HiAction_XChannel.k( 2809): willSendHeartbeat: 
+I/HiAction_XChannel.k-2307( 2809): setIntoMsgQueue(): 
+I/HwAlarmManagerService( 1142): hwSetAlarm listenerTag: *job.deadline*
+I/HiAction_XChannel.i-2307( 2809): run(): received heartbeat request message
+I/HiAction_XChannel.e( 2809): sendHeartbeat(): 
+I/HiAction_XChannel.i-2307( 2809): handleHeartbeatReq(): to get heartbeat response
+I/HiAction_XChannel.k-2307( 2809): getFromHeartbeatRspQueue(): 
+I/JobScheduler.Time( 1142): mNextJobExpiredElapsedMillis: 4372630702
+I/BDLog   ( 2137): BD.Scheduler:Hour task coming
+D/JobServiceContext( 1142): Scheduling time out for 'com.huawei.placerecognition.service.PlaceRecognitionService' jId: 3001, in 18 s
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{af7d5b5 u0 com.huawei.bd.action.heartbeat_hour}
+W/wework  ( 9357): [9419:1217/00:03:30.901:W:tcp_connection.cpp(395)] GapTcpConnection(2): ReadData 20 bytes.
+I/InputManager( 2176): new hook event
+D/JobServiceContext( 1142): handleServiceBound for 996523e #u0a20/3001 com.huawei.intelligent/com.huawei.placerecognition.service.PlaceRecognitionService
+D/JobServiceContext( 1142): Scheduling time out for 'com.huawei.placerecognition.service.PlaceRecognitionService' jId: 3001, in 8 s
+I/PlaceRecognitionService(31358): onStartJob startId = 3001 extras = PersistableBundle[mParcelledData.dataSize=76]
+D/JobServiceContext( 1142): doCallback of : JobStatus{996523e #u0a20/3001 com.huawei.intelligent/com.huawei.placerecognition.service.PlaceRecognitionService u=0 s=10020 TIME=none:+14m59s905ms NET=1 PERSISTED READY} v:VERB_STARTING
+D/JobServiceContext( 1142): Scheduling time out for 'com.huawei.placerecognition.service.PlaceRecognitionService' jId: 3001, in 600 s
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{9b9fbb u0 com.tencent.mm.TrafficStatsReceiver}
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{d5a7c97 u0 com.huawei.hwsystemmanager.power.SCHEDULE_RECORD_REMAING_TIME_SCENE}
+D/MSF.C.MonitorNetFlowStore(20741): MonitorWriteDataThread Enter
+I/HiAction_XChannel.k-2307( 2809): stopAlarm(): 
+I/HiAction_XChannel.k-2307( 2809): restartAlarm(): 
+W/HiAction_XChannel.f-2307( 2809): TraceFlow.PushMessageFlow: handlePacket type:6
+I/HiAction_XChannel.f-2307( 2809): receive packet, catch HeartBeat
+I/HiAction_XChannel.k-2307( 2809): setIntoHeartbeatRspQueue(): 
+I/HiAction_XChannel.f-2307( 2809): handlePacket(): TYPE_PT_HEARTBEAT_RES
+I/HiAction_XChannel.k-2307( 2809): setIntoHeartbeatRspQueue(): 
+I/HiAction_XChannel.i-2307( 2809): handleHeartbeatReq(): received heartbeat response
+I/HiAction_XChannel.HeartbeatService( 2809): releaseWakeLock(): 
+I/HiAction_XChannel.HeartbeatService( 2809): releaseWakeLock(): succeed
+I/HiAction_XChannel.k-2307( 2809): getFromMsgReqQueue(): 
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{27a066d u10 com.huawei.hwsystemmanager.power.SCHEDULE_RECORD_REMAING_TIME_SCENE}
+D/MSF.C.MonitorNetFlowStore(20741): write data lenth : 2468 | read data lenth : 510, has been stored.
+D/MSF.C.MonitorNetFlowStore(20741): MonitorWriteDataThread End takeTimes=15
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{c1d1831 u10 com.tencent.mm.TrafficStatsReceiver}
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/BDLog   ( 2137): BD.BDCollector:Usagestats collectLocalInfo ok
+I/GCM-GMS (15748): Registering GMS 745476177629
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{c547c08 u0 com.google.iid.TOKEN_REQUEST}
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 1010015 name com.google.android.gms
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+W/HwAlarmManagerService( 1142): isContainsAppUidInWorksource-->happend NameNotFoundException
+E/GCM     ( 2711): Missing checkin config file
+W/GCM     ( 2711): GCM FAILED TO INITIALIZE - missing checkin
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/SmartHeartBeat( 1142): isPendingPackage, false, pkg:com.android.deskclock, action:com.android.deskclock.ALARM_ALERT,not pending alarm with AlarmClockInfo
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{9bdb987 u10 com.google.android.gms.gcm.ACTION_EXECUTE_TASK}
+W/GCM-GMS (15748): Failed to get registration: java.io.IOException: AUTHENTICATION_FAILED
+I/IntelligentProvider(31358): Provider.call: storePrefString
+I/IntelligentProvider(31358): Provider.call: storePrefString
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+I/TrafficMonitor( 1142): update:rxPkts:18,txPkts:37,rxBytes:8678,txBytes:5084
+I/TrafficMonitor( 1142): start expired. level:-1
+I/TrafficMonitor( 1142): gettimer:interval=2000
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+W/HwAlarmManagerService( 1142): isContainsAppUidInWorksource-->happend NameNotFoundException
+D/CalendarSync(31358): syncCalendar end!
+I/PlaceRecognitionService(31358): work start startId : 3001
+I/PlaceRecognitionService(31358): doCommand cmdType = 4
+I/IntelligentProvider(31358): Provider.call: getPrefBoolean
+I/chatty  (31358): uid=10020(u0_a20) PlaceRecognitio identical 1 line
+I/IntelligentProvider(31358): Provider.call: getPrefBoolean
+I/PRController(31358): POSITION_CLUSTER doWork
+I/PositionCluster(31358): deleteTheOutdatedStayPoint outdatedDay = 2018-11-17 00:03:31
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/SmartHeartBeat( 1142): isPendingPackage, false, pkg:com.android.deskclock, action:com.android.deskclock.ALARM_ALERT,not pending alarm with AlarmClockInfo
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+W/HwAlarmManagerService( 1142): isContainsAppUidInWorksource-->happend NameNotFoundException
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+D/SmartHeartBeat( 1142): isPendingPackage, false, pkg:com.android.deskclock, action:com.android.deskclock.ALARM_ALERT,not pending alarm with AlarmClockInfo
+I/NetRec  ( 2711): [153261] aeqv.a: Refreshing scores for 150 networks.
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+D/PGGoogleServicePolicy( 1142): prevent gms/gsf hold partial wakelock
+I/IntelligentProvider(31358): Provider.call: getPrefAll
+I/IntelligentProvider(31358): Provider.call: removePrefList
+D/WorkSource( 2711): Insert in WorkSource{} @ 0 uid 10015 name com.google.android.gms
+W/HwAlarmManagerService( 1142): isContainsAppUidInWorksource-->happend NameNotFoundException
+W/libc    (  747): Set property "hw.wifi.dns_stat" to "338,28,5019,1,10240"
+D/HwConnectivityManagerImpl( 1142): sendIntentDnsEvent connectType 1
+D/HwConnectivityManagerImpl( 1142): sendIntentDnsEvent mDnsCount:100 mDnsIpv6Timeout:0 mDnsResponseTotalTime:1491 mDnsFailCount:0 mDnsResponse20Count:82 mDnsResponse150Count:18 mDnsResponse500Count:0 mDnsResponse1000Count:0 mDnsResponse2000Count:0 mDnsResponseOver2000Count:0
+W/ContextImpl( 1142): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1095 com.android.server.HwConnectivityManagerImpl.sendIntentDnsEvent:726 com.android.server.HwConnectivityManagerImpl.onDnsEvent:629 com.android.server.connectivity.NetdEventListenerService.onDnsEvent:127 android.net.metrics.INetdEventListener$Stub.onTransact:69 
+W/ActivityManager( 1142): Sending non-protected broadcast com.intent.action.wifi_dns_statistics from system 1142:system/1000 pkg android
+W/ActivityManager( 1142): Sending non-protected broadcast com.intent.action.wifi_dns_statistics from system 1142:system/1000 pkg android
+D/HwWifiStatStore( 1142): handleMessage : 2012
+D/HwWifiStatStore( 1142): handleWifiDnsStatReport data is: Bundle[{dnsIpv6Timeout=0, dnsResponse2000Count=0, dnsResponse500Count=0, dnsResponse20Count=82, dnsFailCount=0, dnsCount=100, dnsResponse1000Count=0, dnsResponse150Count=18, dnsResponseOver2000Count=0, dnsResponseTotalTime=1491}]
+I/NetRec  ( 2711): [153262] aeqv.a: Refreshing scores for 150 networks.
+D/PositionCluster(31358): DBSCAN cluster start! size : 20
+D/PositionCluster(31358): DBSCAN cluster end !
+E/PositionCluster(31358): no cluster is found!
+D/PositionCluster(31358): DBSCAN cluster start! size : 1348
+D/HwWifiStatStore( 1142): handleMessage : 200
+E/WifiHAL (  529): enter wifi_get_link_stats
+E/wificond(  750): Failed to get NL80211_STA_INFO_CNAHLOAD
+E/WificondControl( 1142): Noise: -88, Snr: 0, Chload: -1
+D/HwWifiCHRStateManager( 1142): handleMessage : 1001
+D/HwWifiCHRStateManager( 1142): handleUpdateChannel:2442
+V/HwWifiServiceFactory( 1142): get AllImpl object = com.android.server.wifi.HwWifiServiceFactoryImpl@fa23fe8
+D/WifiScoreReport( 1142): Score = 100, wifiConnectivityManagerEnabled = false, lowScoreCount = 0
+D/SensorHub(  527): batch called handle:3 sample_ns:300000000 latency_ns:0
+D/SensorHub(  527): in batch, handle = 3, flags = 0, period_ns = 300000000, timeout = 0
+E/WificondControl( 1142): Noise: -88, Snr: 0, Chload: -1
+D/HwWifiCHRStateManager( 1142): handleMessage : 1001
+D/HwWifiCHRStateManager( 1142): handleUpdateChannel:2442
+V/HwWifiServiceFactory( 1142): get AllImpl object = com.android.server.wifi.HwWifiServiceFactoryImpl@fa23fe8
+D/HuaweiWifiWatchdogStateMachine( 1142): LM mrssi=-42
+D/HuaweiWifiWatchdogStateMachine( 1142): 38:e3:**:**:0c:db current loss[-45]=0%, volume=69
+D/HuaweiWifiWatchdogStateMachine( 1142): 38:e3:**:**:0c:db history loss[-45]=0.19%, volume=1914652
+I/HuaweiWifiWatchdogStateMachine( 1142): spd good count:0, add sc:0.0, rate:1.0
+I/HuaweiWifiWatchdogStateMachine( 1142): current mHighDataFlowRate = 1.0
+I/HuaweiWifiWatchdogStateMachine( 1142): POta txb txg rxg:0, 69, 0. Lr =0% Totpkt=69
+D/WiFi_PRO( 1142): MSG_RETURN_AP_CURRY_RSSI rssi = -42
+I/QosMonitor( 1142): queryRtt: rtt_type = 3
+I/HwQoEJNI( 1142): send_cmd_kernel. begin
+I/HwQoEJNI( 1142): send_cmd_kernel. end
+I/QosMonitor( 1142): postEventFromNative: msg=100,arg1=4,arg2=10
+I/HwQoEJNI( 1142): send_cmd_kernel. begin
+I/HwQoEJNI( 1142): send_cmd_kernel. end
+I/QosMonitor( 1142): postEventFromNative: msg=100,arg1=0,arg2=10
+D/HuaweiWifiWatchdogStateMachine( 1142): 38:e3:**:**:0c:db current RTT[-45]=220, volume=13
+D/HuaweiWifiWatchdogStateMachine( 1142): 38:e3:**:**:0c:db history RTT[-45]=263, volume=213965
+D/HuaweiWifiWatchdogStateMachine( 1142): setSampleRtt: rtt=220,rtt_pkts =13,rtt_when=0
+I/MQoS    ( 1142): rtt=220,tcp_tx_pkts=8640804,tcp_rx_pkts=13542185
+I/QosMonitor( 1142): resetRtt: rtt_type = 3
+I/HwQoEJNI( 1142): send_cmd_kernel. begin
+I/HwQoEJNI( 1142): send_cmd_kernel. end
+D/HuaweiWifiWatchdogStateMachine( 1142): dumpTcpResult: len=10,rtt=220,rttPkt=13,rttWn=0,cgt=16,cgtWn=203629726
+I/HuaweiWifiWatchdogStateMachine( 1142): PTcp RTT:220, rtt pkt=13, tcp_rx=26, tcp_tx=57, tcp_reTran=0, rtRate=0
+D/HuaweiWifiWatchdogStateMachine( 1142): isRttGood is good, AvgRtt = 220, TotPkt = 13
+D/HuaweiWifiWatchdogStateMachine( 1142): mRssiBadCount =0, RSSI not bad.
+D/HuaweiWifiWatchdogStateMachine( 1142): detectNetworkAvailable:hw.wifipro.dns_fail_count = 28711
+D/HuaweiWifiWatchdogStateMachine( 1142): detectNetworkAvailable: tcpRxPkts != 0, reset
+I/HuaweiWifiWatchdogStateMachine( 1142): rs ota tcp lr rttvb bad: false, false, false, false, false; rsth:-75
+D/HuaweiWifiWatchdogStateMachine( 1142): GSC:0, GSR:1.0, RSR:1.0, RTH:-75
+D/HuaweiWifiWatchdogStateMachine( 1142): bqeLevel = 3 rtt=220,rtt_pkts=13 speed=2185 rssi=-42
+D/HuaweiWifiWatchdogStateMachine( 1142): Enter updateQoeLevel level = 3
+D/HuaweiWifiWatchdogStateMachine( 1142): Leave updateQoeLevel level = 3
+I/HuaweiWifiWatchdogStateMachine( 1142):  pkt chk not bad, reset sc to 0.
+D/HuaweiWifiWatchdogStateMachine( 1142): ### mPktChkBadCnt=0
+D/WiFi_PRO_WifiProStateMachine( 1142): onWifiBqeDetectionResult =  3
+D/WiFi_PRO_WifiProStateMachine( 1142): "ChinaNet-bvzs"  TCPRTT  level = 3
+D/HwWifiConnectivityMonitor( 1142): ENTER: notifyTopUidTcpInfo, tx = 30, rx = 24, reTx = 0, uid = 10408, tr = 0.0
+D/HwWifiConnectivityMonitor( 1142): ENTER: notifyTopUidTcpInfo, rtt = 216, rttPkts = 11, aveRtt = 19.636364, app = com.yaya.zone
+D/HwUidTcpMonitor( 1142): parseWlanUidTcpStatistics lastUidTcpStatInfo = [ mUid = 10408 mPacketName = com.yaya.zone mSendSegs = 1127 mResendSegs = 2 mRcvSegs = 1093 ]
+D/HwUidTcpMonitor( 1142): parseWlanUidTcpStatistics lastUidTcpStatInfo = [ mUid = 10376 mPacketName = com.tencent.wework mSendSegs = 619 mResendSegs = 7 mRcvSegs = 551 ]
+D/HwUidTcpMonitor( 1142): parseWlanUidTcpStatistics lastUidTcpStatInfo = [ mUid = 10091 mPacketName = com.huawei.hiaction.share_user:10091 mSendSegs = 71 mResendSegs = 0 mRcvSegs = 53 ]
+D/HwWifiConnectivityMonitor( 1142): handleTopUidInternetStatusChanged, uid = 10408, status = 0
+I/MQoS    ( 1142): QOS_level:3(3),wifi-link;use signalLvl:3;RAT:4G
+D/WiFi_PRO_EvaluateController( 1142): "ChinaNet-bvzs",crurrent Signal =  4, last  Signal = 4, isSemiAuto, last evaluate is Valid
+D/WiFi_PRO_WifiProStateMachine( 1142): updateWifiQosLevel, mCurrentSsid: "ChinaNet-bvzs" ,isWiFiNoInternet: false, qosLevel: 3
+D/WiFi_PRO_EvaluateController( 1142): internetAccessType not change, can not update
+D/WiFi_PRO_EvaluateController( 1142): updateEvaluate Level  succeed!.new Level = 3
+D/WifiConfigStore( 1142): Writing to stores completed in 4 ms.
+W/NetRec  ( 2711): [153261] aeqv.a: Unexpected exception com.android.volley.NoConnectionError: java.net.ConnectException: Failed to connect to mobilenetworkscoring-pa.googleapis.com/216.58.200.10:443 while waiting for score updates (com.android.volley.NoConnectionError: java.net.ConnectException: Failed to connect to mobilenetworkscoring-pa.googleapis.com/216.58.200.10:443). Rescheduling.
+I/NetRec  ( 2711): [153261] aeqv.a: Still entries pending update, scheduling new rapid_refresh_scores_task refresh.
+I/NetRec  ( 2711): [153261] aeqv.a: Completed rapid_refresh_scores_task score refresh task in 1087 ms, returning 1
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{922f738 u0 com.google.android.gms.gcm.ACTION_SCHEDULE}
+W/NetRec  ( 2711): [153262] aeqv.a: Unexpected exception com.android.volley.NoConnectionError: java.net.ConnectException: Failed to connect to mobilenetworkscoring-pa.googleapis.com/216.58.200.10:443 while waiting for score updates (com.android.volley.NoConnectionError: java.net.ConnectException: Failed to connect to mobilenetworkscoring-pa.googleapis.com/216.58.200.10:443). Rescheduling.
+I/NetRec  ( 2711): [153262] aeqv.a: Still entries pending update, scheduling new refresh_scores_task refresh.
+I/NetRec  ( 2711): [153262] aeqv.a: Completed refresh_scores_task score refresh task in 1074 ms, returning 1
+V/BroadcastQueue( 1142): Finished with ordered broadcast BroadcastRecord{8868311 u0 com.google.android.gms.gcm.ACTION_SCHEDULE}
