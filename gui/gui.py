@@ -153,28 +153,36 @@ class Application(object):
     def logcat(self, frame_logcat):
         def get_logcat():
             content = self.func.get_log()
-            if content.poll:
-                with open('.//log.log', encoding = 'utf8') as f:
-                    for each_line in f:
-                        text.delete('1.0', 'end')
-                        text.insert(INSERT,each_line)
+            # if content.poll:
+            
+                # with open('.//log.log', encoding = 'utf8') as f:
+                    # for each_line in f:
+                        # text.delete('1.0', 'end')
+                
         
         def show_logcat():
-            self.func.close_log()
-            with open('.//log.log', encoding = 'utf8') as f:
-                for each_line in f:
-                    text.delete('1.0', 'end')
+            content = self.func.close_log()
+            if content.poll:
+            # for each_line in iter(content.stdout.readline, 'utf8'):
+                for each_line in content.stdout.readlines():
+                    each_line = each_line.decode('utf8')
                     text.insert(INSERT,each_line)
+            # with open('.//log.log', encoding = 'utf8') as f:
+            #     for each_line in f:
+            #         # text.delete('1.0', 'end')
+            #         text.insert(INSERT,each_line)
         def search_packg():
             packg = entry.get()
             pids = self.func.get_pid('.//log.log', packg)
             print(pids)
             results = self.func.log_pid('.//log.log', pids)
             for line in results:
-                text.delete('1.0', 'end')
+                # text.delete('1.0', 'end')
                 text.insert(INSERT,line)
 
-        text = Text(frame_logcat)
+        scroll = tkinter.Scrollbar(frame_logcat)
+        text = tkinter.Text(frame_logcat, borderwidth=0)
+       
         button1 = ttk.Button(frame_logcat, text = '抓取日志', command =get_logcat)
         button2 = ttk.Button(frame_logcat, text='结束抓取', command = show_logcat)
         entry = ttk.Entry(frame_logcat)
@@ -185,7 +193,10 @@ class Application(object):
         button2.pack()
         entry.pack()
         button3.pack()
-        text.pack()
+        scroll.pack(side = tkinter.RIGHT, fill = tkinter.Y)
+        text.pack(side = tkinter.LEFT, fill = tkinter.Y)
+        scroll.config(command = text.yview)
+        text.config(yscrollcommand = scroll.set)
 
 
 app = Application()

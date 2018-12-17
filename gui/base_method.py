@@ -120,10 +120,13 @@ class Method():
         cmd = 'adb logcat -v brief'
         log = open('.//log.log', 'w')
         content = subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
-        # subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
+        # # subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
         return content
     
     def close_log(self):
         os.system('adb kill-server')
+        cmd = 'adb logcat -d -v brief'
+        content = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+        return content
         
 
