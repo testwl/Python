@@ -1,5 +1,6 @@
 import os
 import cv2
+import codecs
 import tkinter as tk
 import tkinter.messagebox
 from tkinter import filedialog
@@ -152,51 +153,82 @@ class Application(object):
 
     def logcat(self, frame_logcat):
         def get_logcat():
-            content = self.func.get_log()
-            # if content.poll:
-            
-                # with open('.//log.log', encoding = 'utf8') as f:
-                    # for each_line in f:
-                        # text.delete('1.0', 'end')
-                
+            self.func.get_log()  
         
         def show_logcat():
-            content = self.func.close_log()
-            if content.poll:
-            # for each_line in iter(content.stdout.readline, 'utf8'):
-                for each_line in content.stdout.readlines():
-                    each_line = each_line.decode('utf8')
-                    text.insert(INSERT,each_line)
-            # with open('.//log.log', encoding = 'utf8') as f:
-            #     for each_line in f:
-            #         # text.delete('1.0', 'end')
-            #         text.insert(INSERT,each_line)
+            self.func.close_log()
+            cleartxt()
+            content = open('.//log.log', encoding='utf8').readlines()
+            for each_line in content:
+                # each_line = each_line.decode('utf8')
+                text.insert(INSERT,each_line)
+            
         def search_packg():
+            cleartxt()
             packg = entry.get()
-            pids = self.func.get_pid('.//log.log', packg)
-            print(pids)
-            results = self.func.log_pid('.//log.log', pids)
-            for line in results:
-                # text.delete('1.0', 'end')
-                text.insert(INSERT,line)
+            if packg:
+                pids = self.func.get_pid('.//log.log', packg)
+                print(pids)
+                results = self.func.log_pid('.//log.log', pids)
+                for line in results:
+                    text.insert(INSERT,line)
+                txt = text.get('1.0', END)
+                self.func.savetxt('.//search_package.log', txt)
+            else:
+                tkinter.messagebox.showinfo('提示', '请输入packagename')
+
+        def cleartxt():
+            text.delete('1.0', 'end')
+
+        def modified(event):
+            text.see(tkinter.END) 
+        
+        def selectLevel(*args):
+            value = comboxlist.get()
+            if var1.get():
+                filepath = './/search_package.log' 
+            else:
+                filepath = './/log.log'
+            cleartxt()
+            lines = self.func.log_level(filepath, str(value))        
+            for line in lines:
+                each_line = line[0] + '\n'
+                text.insert(INSERT,each_line)
+            txt = text.get('1.0', END)
+            self.func.savetxt('.//search_level.log', txt)
 
         scroll = tkinter.Scrollbar(frame_logcat)
         text = tkinter.Text(frame_logcat, borderwidth=0)
+        text.bind('<<Modified>>', modified)
+        comvalue=tkinter.StringVar()
+        comboxlist=ttk.Combobox(frame_logcat,textvariable=comvalue) #初始化
+        comboxlist["values"]=("V","D","I","W","E","F","S")
+        # comboxlist.current(0)  #选择第一个
+        comboxlist.bind("<<ComboboxSelected>>",selectLevel)  #绑定事件
+        var1 = IntVar()
+        checkbutton = Checkbutton(frame_logcat, text="组合搜索", variable=var1)
+        
        
         button1 = ttk.Button(frame_logcat, text = '抓取日志', command =get_logcat)
         button2 = ttk.Button(frame_logcat, text='结束抓取', command = show_logcat)
         entry = ttk.Entry(frame_logcat)
         button3 =ttk.Button(frame_logcat, text = '搜索指定包名日志', command = search_packg)
+        button4 = ttk.Button(frame_logcat, text='保存为文档', command =lambda:self.func.savetxt('save.log', text.get('1.0', END)))
+        button5 = ttk.Button(frame_logcat, text = '清空', command = cleartxt)
         
         
         button1.pack()
         button2.pack()
         entry.pack()
         button3.pack()
+        checkbutton.pack()
+        comboxlist.pack()
         scroll.pack(side = tkinter.RIGHT, fill = tkinter.Y)
         text.pack(side = tkinter.LEFT, fill = tkinter.Y)
         scroll.config(command = text.yview)
         text.config(yscrollcommand = scroll.set)
+        button4.pack()
+        button5.pack()
 
 
 app = Application()

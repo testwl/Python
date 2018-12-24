@@ -2,7 +2,8 @@ import cv2
 import os
 import re
 import subprocess
-import signal
+import codecs
+import sys
 from PIL import Image, ImageTk
 from pystrich.code128 import Code128Encoder
 from pystrich.qrcode import QRCodeEncoder
@@ -86,7 +87,7 @@ class Method():
             container.config(text = '请选择文件或输入安装包路径')
             
     def log_level(self, path, level):
-        content = open(path, encoding = 'utf8').readlines()
+        content = codecs.open(path, 'r' ,encoding = 'utf8').readlines()
         results = []
         for line in content:
             result = re.findall('^{}.+'.format(level), line)
@@ -95,7 +96,7 @@ class Method():
         return results
 
     def get_pid(self, path, packagename):
-        content = open(path, encoding = 'utf-8').readlines()
+        content = codecs.open(path, encoding = 'utf-8').readlines()
         pids = []
         for line in content:
             if packagename in line:
@@ -105,7 +106,7 @@ class Method():
         return pids
 
     def log_pid(self, path, pids):
-        content = open(path, encoding='utf8').readlines()
+        content = codecs.open(path, encoding='utf8').readlines()
         lines = []
         for line in content:
             for pid in pids:
@@ -118,15 +119,17 @@ class Method():
     def get_log(self):
         os.system("adb logcat -c")
         cmd = 'adb logcat -v brief'
-        log = open('.//log.log', 'w')
-        content = subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
-        # # subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
-        return content
+        log = codecs.open('.//log.log', 'w', 'UTF-8')
+        subprocess.Popen(cmd, shell=True, stdout=log, stderr=subprocess.PIPE)
     
     def close_log(self):
         os.system('adb kill-server')
-        cmd = 'adb logcat -d -v brief'
-        content = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-        return content
+        os.system('adb start-server')
+
+    def savetxt(self ,filename, content):
+        f = codecs.open(filename,'w', 'UTF-8')
+        # txt = text.get('1.0', END)
+        f.write(content.encode('utf-8').decode('utf-8'))
+        f.close()
         
 
